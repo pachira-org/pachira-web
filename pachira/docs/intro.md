@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Pachira is an Ethereum protocol for mining tokens and distributing rewards.
 
-The Pachira protocol is designed to support Decentralized Autonomous Organzations by allowing anyon to participate in the 
+The Pachira protocol is designed to support Decentralized Autonomous Organzations by allowing anyone to participate in the 
 Ethereum ecosystem through a hybrid Proof-of-Work/Proof-of-Stake consensus mechanism.
 
 The protocol is designed according to the following design principles:
@@ -17,7 +17,7 @@ The protocol is designed according to the following design principles:
 
 3. FPGA can be used to reduce the overall power consumption of mining and to empower anyone to participate in mining.
 
-4. There are dynamics that have emerged from each consensus which are contrary to principles of transparency and equal access. These 
+4. There are dynamics in each consensus model which are contrary to principles of transparency and equal access. These 
 behaviors should be addressed.
    
 5. Artificial Value created through pre-minted Management Tokens, investor pre-sales, and Initial Coin Offerings 
