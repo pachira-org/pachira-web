@@ -1,0 +1,38 @@
+# Author: Jake Mathai
+# Purpose: Compose file
+version: '3'
+volumes:
+  node-modules:
+services:
+  # React frontend
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    hostname: web
+    container_name: web
+    command: ["npm", "start"]
+    environment:
+      - SKIP_PREFLIGHT_CHECK=true
+      - PORT=3000
+    volumes:
+      - ./web:/pachira-web
+      - node-modules:/pachira-web/node_modules
+    ports:
+      - "3000:3000"
+    expose:
+      - "3000"
+  # nginx
+  nginx:
+    image: nginx:latest
+    hostname: nginx
+    container_name: nginx
+    volumes:
+      - ./nginx/:/etc/nginx/conf.d
+    ports:
+      - "80:3000"
+    expose:
+      - "80"
+    depends_on:
+      - dapp
