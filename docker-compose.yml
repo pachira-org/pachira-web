@@ -17,8 +17,8 @@ services:
       - SKIP_PREFLIGHT_CHECK=true
       - PORT=3000
     volumes:
-      - ./pachira:/pachira
-      - node-modules:/node_modules
+      - ./pachira:/pachira-web/pachira
+      - node-modules:/pachira-web/pachira/node_modules
     ports:
       - "3000:3000"
     expose:
