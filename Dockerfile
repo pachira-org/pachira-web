@@ -2,6 +2,7 @@
 FROM node:15.14.0-alpine3.10
 WORKDIR /pachira-web/
 COPY /pachira ./pachira/
+RUN cd pachira
 RUN ls -l
 RUN pwd && ls -l
 RUN apk update
