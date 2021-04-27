@@ -4,5 +4,4 @@ WORKDIR /pachira-web/pachira
 COPY pachira/. ./
 RUN pwd && ls -la
 RUN rm -rf package-lock.json
-RUN npm update && npm install --force && npm upgrade
-RUN pwd && ls -l
+RUN npm install --quiet
